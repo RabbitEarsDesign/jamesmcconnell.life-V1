@@ -1,0 +1,38 @@
+.heading2 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading2 h1 {
+  /* background-image: url("./pexels-damir-mijailovic-3651579.jpg"); */
+  /* background-image: url("./soheb-zaidi-796ic-Sz0d4-unsplash.jpg"); */
+  background-size: cover;
+  background-clip: text;
+  /* color: transparent; */
+  font-weight: 900;
+  font-size: 6rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 3px 3px var(--secondary-color), 5px 5px var(--primary-color);
+  transition: all 0.4s ease;
+}
+
+.heading2 h1:hover {
+  background-image: url("./pexels-damir-mijailovic-3651579.jpg");
+  color: transparent;
+  text-shadow: none;
+}
+
+@media (max-width: 700px) {
+  .heading2 h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .heading2 h1 {
+    font-size: 2rem;
+  }
+}

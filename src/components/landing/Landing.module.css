@@ -1,0 +1,84 @@
+.landing {
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 90vh; */
+}
+
+.img {
+  margin-left: auto;
+
+  /* text-align: right; */
+}
+
+.img img {
+  width: 50vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding-left: 3rem;
+  height: 90vh;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.landing h1 {
+  margin: 0;
+  font-size: 4rem;
+}
+
+.landing p {
+  line-height: 1.6rem;
+}
+
+.btn {
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  margin-right: auto;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 0px 0px var(--secondary-color), 7px 7px 0px 0px;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .flex {
+    /* flex-direction: column; */
+  }
+
+  .details {
+    overflow: visible;
+  }
+
+  .landing h1 {
+    font-size: 2rem;
+  }
+
+  .landing p {
+    font-size: 0.75rem;
+  }
+}
+
+.landing .social a {
+  margin: 0;
+  padding: 0;
+}
+
+.landing .social a:nth-child(2) {
+  margin-left: 10px;
+}

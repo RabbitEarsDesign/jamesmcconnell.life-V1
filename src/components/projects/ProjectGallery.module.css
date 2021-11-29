@@ -1,0 +1,11 @@
+.projectGallery {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 3rem;
+}
+
+@media (max-width: 450px) {
+  .projectGallery {
+    padding: 30px;
+  }
+}

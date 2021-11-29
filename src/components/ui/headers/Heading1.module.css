@@ -1,0 +1,35 @@
+.heading1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading1 h1 {
+  background-size: cover;
+  background-clip: text;
+  font-weight: 900;
+  font-size: 6rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 3px 3px var(--primary-color), 5px 5px var(--secondary-color);
+  transition: all 0.4s ease;
+}
+
+.heading1 h1:hover {
+  background-image: url("./pexels-damir-mijailovic-3651579.jpg");
+  color: transparent;
+  text-shadow: none;
+}
+
+@media (max-width: 700px) {
+  .heading1 h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .heading1 h1 {
+    font-size: 2rem;
+  }
+}

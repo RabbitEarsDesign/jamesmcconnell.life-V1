@@ -1,0 +1,47 @@
+.contact {
+  width: 100%;
+  text-align: left;
+  background: var(--sedonary-color);
+  color: var(--primary-color);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+}
+
+.formControl input {
+  padding: 10px 15px;
+}
+
+.formControl textarea {
+  padding: 10px 15px;
+  min-height: 50px;
+}
+
+.formControl label {
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.formControl input,
+.formControl textarea {
+  border: none;
+  border-bottom: 3px solid var(--primary-color);
+  transition: border 0.4s ease;
+}
+
+.formControl:hover input,
+.formControl:hover textarea {
+  border-bottom: 3px solid var(--tertiary-color);
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}

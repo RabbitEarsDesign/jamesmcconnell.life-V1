@@ -1,0 +1,13 @@
+.about {
+  padding: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .flex {
+    flex-direction: column;
+  }
+}
