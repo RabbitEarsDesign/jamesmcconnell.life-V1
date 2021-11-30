@@ -20,8 +20,8 @@ const MainNavigation = () => {
             </NavLink>
           </li>
           <li className={classes.btn}>
-            <NavLink to="/expirements" activeClassName={classes.active}>
-              Expirements
+            <NavLink to="/experiments" activeClassName={classes.active}>
+              The Lab
             </NavLink>
           </li>
         </ul>

@@ -1,11 +1,13 @@
 import silhouette from "./silhouette3.png";
 // FONTAWESOME
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 // COMPONENTS
 import Button from "../ui/Button";
 // CSS
 import classes from "./Landing.module.css";
+
 const Landing = () => {
   return (
     <section className={classes.landing}>
@@ -16,7 +18,7 @@ const Landing = () => {
           <p>
             Web developer, designer, and digital artist, with experience
             building functional and user friendly web applications utilizing
-            technologies such as JavaScript/React, HTML, & CSS
+            technologies such as JavaScript/ReactJS, HTML, & CSS
           </p>
           <div className={classes.social}>
             <a href="https://github.com/rabbitearsdesign" target="blank">
@@ -28,6 +30,10 @@ const Landing = () => {
             >
               <FontAwesomeIcon icon={faLinkedin} className={classes.icon} />
             </a>
+            <a href="somejog" download>
+              <FontAwesomeIcon icon={faDownload} className={classes.icon} />
+            </a>
+            <small>resume</small>
           </div>
           <Button url="#projects" target="">
             View My Work

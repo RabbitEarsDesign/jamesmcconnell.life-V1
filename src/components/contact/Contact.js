@@ -97,7 +97,7 @@ function Contact() {
         </div>
         {formIsSubmitted ? (
           <p className={classes.success}>
-            Your submmision is received, I will be in touch shortly
+            Your submmision is received. I will be in touch shortly
           </p>
         ) : (
           <Button>Submit</Button>

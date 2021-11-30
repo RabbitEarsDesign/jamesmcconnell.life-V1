@@ -2,14 +2,14 @@ import React from "react";
 // COMPONENTS
 import Landing from "../components/landing/Landing";
 import ProjectGallery from "../components/projects/ProjectGallery";
-import ArtGallery from "../components/art/ArtGallery";
+import Directory from "../components/directory/Directory";
 
 function HomePage() {
   return (
     <div>
       <Landing />
       <ProjectGallery />
-      {/* <ArtGallery /> */}
+      <Directory />
     </div>
   );
 }

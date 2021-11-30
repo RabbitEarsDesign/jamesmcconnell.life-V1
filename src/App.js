@@ -4,7 +4,7 @@ import Layout from "./components/layout/Layout";
 // Pages
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import ExpirementsPage from "./pages/ExpirementsPage";
+import ExperimentsPage from "./pages/ExperimentsPage";
 import "./App.css";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<HomePage />}></Route>
         <Route path="/about" element={<AboutPage />}></Route>
-        <Route path="/expirements" element={<ExpirementsPage />}></Route>
+        <Route path="/experiments" element={<ExperimentsPage />}></Route>
         <Route path="/" element={<Navigate replace to="/home" />} />
       </Routes>
     </Layout>

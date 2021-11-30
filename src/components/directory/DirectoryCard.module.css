@@ -1,0 +1,31 @@
+.card {
+  width: 30%;
+  /* height: 200px; */
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 9px 9px 0px 0px var(--secondary-color),
+    12px 12px 0px 0px var(--primary-color);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  box-shadow: inset 3px 3px var(--tertiary-color),
+    inset 5px 5px var(--tertiary-color);
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 60%;
+  }
+}
+
+/* @media (max-width: 499px) {
+  .card {
+    width: 50%;
+  }
+} */

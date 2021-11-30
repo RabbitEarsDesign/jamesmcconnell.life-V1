@@ -1,0 +1,18 @@
+.linkElement {
+  text-align: center;
+  background: var(--primary-color);
+  color: var(--tertiary-color);
+  text-decoration: underline;
+  padding-bottom: 3rem;
+}
+
+.linkElement:hover a {
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.linkElement:hover {
+  text-decoration: none;
+}

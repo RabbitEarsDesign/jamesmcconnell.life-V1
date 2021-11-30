@@ -22,7 +22,7 @@
 
 .nav li {
   margin-left: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .nav a {
@@ -46,5 +46,11 @@
 @media (max-width: 450px) {
   .nav a {
     padding: 0;
+    margin: 0;
+    font-size: 0.51rem;
+  }
+
+  .nav li {
+    font-size: 0.5rem;
   }
 }

@@ -7,7 +7,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Video from "../ui/Video";
 // CSS
 import classes from "./Bio.module.css";
-import Button from "../ui/Button";
+// import Button from "../ui/Button";
 function Bio() {
   return (
     <div className={classes.bio}>

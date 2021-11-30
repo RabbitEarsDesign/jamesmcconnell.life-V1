@@ -82,3 +82,34 @@
 .landing .social a:nth-child(2) {
   margin-left: 10px;
 }
+.landing .social a:nth-child(3) {
+  margin-left: 10px;
+  /* position: relative; */
+}
+
+.landing .social small {
+  color: var(--primary-color);
+  background: var(--tertiary-color);
+  padding: 5px 15px;
+  margin-left: 5px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  position: absolute;
+  z-index: 2;
+  text-decoration: underline;
+  /* left: 0%; */
+}
+
+.landing .social a:nth-child(3):hover + small {
+  /* display: block; */
+  opacity: 1;
+}
+
+@media (max-width: 500px) {
+  .landing .social small {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+  }
+}
