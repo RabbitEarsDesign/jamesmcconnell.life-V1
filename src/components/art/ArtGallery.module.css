@@ -10,3 +10,12 @@
   width: 100%;
   margin: 0 auto;
 }
+
+.icon {
+  font-size: 5rem;
+  margin: 2rem;
+}
+
+.icon:hover {
+  color: var(--tertiary-color);
+}

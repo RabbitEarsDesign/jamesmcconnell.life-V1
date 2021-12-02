@@ -2,7 +2,11 @@ import React from "react";
 // FONTAWESOME
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 // COMPONENTS
 import Video from "../ui/Video";
 // CSS
@@ -13,9 +17,9 @@ function Bio() {
     <div className={classes.bio}>
       <h1>About Me.</h1>
       <div className={classes.social}>
-        <a href="resume" download className={classes.download}>
+        {/* <a href="resume" download className={classes.download}>
           resume <FontAwesomeIcon icon={faDownload} />
-        </a>
+        </a> */}
         <a href="https://github.com/rabbitearsdesign" target="blank">
           <FontAwesomeIcon icon={faGithub} className={classes.icon} />
         </a>
@@ -24,6 +28,9 @@ function Bio() {
           target="blank"
         >
           <FontAwesomeIcon icon={faLinkedin} className={classes.icon} />
+        </a>
+        <a href="https://www.instagram.com/rabbitearsdesign" target="blank">
+          <FontAwesomeIcon icon={faInstagram} className={classes.icon} />
         </a>
       </div>
       <small>Front-end Developer, Designer, Digital Atist</small>

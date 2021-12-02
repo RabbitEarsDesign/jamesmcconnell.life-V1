@@ -39,12 +39,12 @@ const Landing = () => {
             <a href="https://www.instagram.com/rabbitearsdesign" target="blank">
               <FontAwesomeIcon icon={faInstagram} className={classes.icon} />
             </a>
-            <a
+            {/* <a
               href={process.env.PUBLIC_URL + "/resume_james_mcconnell.pdf"}
               download
             >
               <FontAwesomeIcon icon={faDownload} className={classes.icon} />
-            </a>
+            </a> */}
             <small>resume</small>
           </div>
           <Button url="#projects" target="">

@@ -54,3 +54,13 @@
     padding: 5px 10px !important;
   }
 }
+
+@media (max-width: 321px) {
+  .social {
+    flex-direction: column;
+  }
+
+  .social a {
+    margin: 5px 0;
+  }
+}
