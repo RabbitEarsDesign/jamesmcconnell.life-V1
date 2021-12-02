@@ -1,8 +1,14 @@
 import silhouette from "./silhouette3.png";
+// PDF
+
 // FONTAWESOME
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 // COMPONENTS
 import Button from "../ui/Button";
 // CSS
@@ -25,12 +31,18 @@ const Landing = () => {
               <FontAwesomeIcon icon={faGithub} className={classes.icon} />
             </a>
             <a
-              href="https://www.linkedin.com/company/rabbit-ears-design/?viewAsMember=true"
+              href="https://www.linkedin.com/in/james-mcconnell-rabbit-ears-design/"
               target="blank"
             >
               <FontAwesomeIcon icon={faLinkedin} className={classes.icon} />
             </a>
-            <a href="somejog" download>
+            <a href="https://www.instagram.com/rabbitearsdesign" target="blank">
+              <FontAwesomeIcon icon={faInstagram} className={classes.icon} />
+            </a>
+            <a
+              href={process.env.PUBLIC_URL + "/resume_james_mcconnell.pdf"}
+              download
+            >
               <FontAwesomeIcon icon={faDownload} className={classes.icon} />
             </a>
             <small>resume</small>

@@ -44,3 +44,13 @@
   color: var(--primary-color);
   background: var(--secondary-color);
 }
+
+.bio video {
+  height: 50px;
+}
+
+@media (max-width: 500px) {
+  .download {
+    padding: 5px 10px !important;
+  }
+}

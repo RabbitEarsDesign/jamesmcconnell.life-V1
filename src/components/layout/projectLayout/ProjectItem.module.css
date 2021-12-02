@@ -1,0 +1,71 @@
+.project {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 2rem;
+  box-shadow: 9px 9px 0px 0px var(--primary-color),
+    12px 12px 0px 0px var(--secondary-color);
+}
+
+.project:hover {
+  box-shadow: 9px 9px 0px 0px var(--primary-color),
+    12px 12px 0px 0px var(--tertiary-color);
+}
+
+.project:hover img {
+  filter: grayscale(100);
+}
+
+.project img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  transition: filter 0.4s ease;
+}
+
+.btn {
+  z-index: 100;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.4s ease;
+
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  padding: 10px 0px;
+  border: 2px solid var(--primary-color);
+  box-shadow: 2px 2px 0px 0px var(--secondary-color) 7px 7px 0px 0px
+    var(--primary-color);
+}
+
+.project:hover .btn {
+  opacity: 1;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 850px) {
+  .project {
+    width: 400px;
+    height: 400px;
+    margin: 2rem;
+  }
+
+  .project img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .project {
+    width: 230px;
+    height: 230px;
+    margin: 2rem;
+  }
+
+  .project img {
+    height: 230px;
+  }
+}

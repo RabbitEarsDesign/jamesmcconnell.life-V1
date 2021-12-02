@@ -10,4 +10,8 @@
   .flex {
     flex-direction: column;
   }
+
+  .about {
+    padding: 2rem;
+  }
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 // COMPONENTS
-import Experiments from "../expirements/Experiment";
+
 // CSS
 import classes from "./Clock.module.css";
 

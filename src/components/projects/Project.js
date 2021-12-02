@@ -11,21 +11,8 @@ const Project = (props) => {
       </div>
       <div className={classes.details}>
         <h1>{props.title}</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          voluptas, ut molestias incidunt ipsa inventore reprehenderit a
-          doloremque laudantium delectus.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          voluptas, ut molestias incidunt ipsa inventore reprehenderit a
-          doloremque laudantium delectus.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          voluptas, ut molestias incidunt ipsa inventore reprehenderit a
-          doloremque laudantium delectus.
-        </p>
+        <p>{props.description}</p>
+
         <Button url={props.github} target="blank">
           View On Github
         </Button>

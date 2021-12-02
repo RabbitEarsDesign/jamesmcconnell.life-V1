@@ -5,6 +5,12 @@
   align-items: center;
 }
 
+@media (max-width: 450px) {
+  .technologies {
+    flex-direction: column;
+  }
+}
+
 .icon {
   font-size: 3rem;
   transition: color 0.4s ease;

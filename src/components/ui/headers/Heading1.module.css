@@ -1,6 +1,7 @@
 .heading1 {
   margin: 0 auto;
   text-align: center;
+  background: var(--primary-color);
 }
 
 .heading1 h1 {

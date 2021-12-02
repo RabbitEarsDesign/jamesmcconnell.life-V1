@@ -9,8 +9,16 @@
 }
 
 .logo {
-  /* font-size: 2rem; */
-  color: white;
+  width: 90px;
+  height: 50px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav {
+  /* margin: 0 auto; */
 }
 
 .nav ul {
@@ -41,6 +49,10 @@
   .nav a {
     font-size: 0.9rem;
   }
+
+  .header {
+    padding: 0 5%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -48,6 +60,11 @@
     padding: 0;
     margin: 0;
     font-size: 0.51rem;
+  }
+
+  .logo {
+    width: 50px;
+    height: 30px;
   }
 
   .nav li {

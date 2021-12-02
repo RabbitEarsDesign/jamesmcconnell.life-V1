@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 // HOOKS
 import useInput from "../../hooks/use-input";
+import useHttp from "../../hooks/use-http";
 // COMPONENTS
 import Button from "../ui/Button";
 // CSS
 import classes from "./Contact.module.css";
 
 function Contact() {
+  const { isLoading, error, sendRequest } = useHttp();
+
   const [formIsSubmitted, setFormIsSubmitted] = useState(false);
   const {
     value: nameInputValue,
@@ -43,11 +46,33 @@ function Contact() {
     resetName();
   };
 
+  const applyData = () => {};
+
   function submitHandler(e) {
     e.preventDefault();
-
+    const enteredName = nameInputValue;
+    const enteredEmail = emailInputValue;
+    const enteredMessage = messageInputValue;
+    const url = `https://script.google.com/macros/s/AKfycbwJ9I9O8TlxMO8lGm8N2fYxKXnNBa2kGxHa5sPSPYj8cpIKLII/exec?name=${enteredName}&email=${enteredEmail}&message=${enteredMessage}`;
+    // const form = document.querySelector("form");
+    // console.log(form);
     if (formIsValid) {
-      console.log(e.target);
+      console.log(enteredName, enteredEmail, enteredMessage);
+
+      sendRequest(
+        {
+          url: url,
+          method: "POST",
+          // headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: enteredName,
+            email: enteredEmail,
+            message: enteredMessage,
+          }),
+        },
+        applyData
+      );
+
       setFormIsSubmitted(true);
       resetInputs();
     } else {
@@ -62,6 +87,7 @@ function Contact() {
         <div className={classes.formControl}>
           <label htmlFor="">Name * </label>
           <input
+            name="name"
             type="text"
             value={nameInputValue}
             onChange={nameChangeHandler}
@@ -74,6 +100,7 @@ function Contact() {
         <div className={classes.formControl}>
           <label htmlFor="">Email *</label>
           <input
+            name="email"
             type="text"
             value={emailInputValue}
             onChange={emailChangeHandler}
@@ -86,6 +113,7 @@ function Contact() {
         <div className={classes.formControl}>
           <label htmlFor="">Message *</label>
           <textarea
+            name="message"
             type="text"
             value={messageInputValue}
             onChange={messageChangeHandler}
@@ -95,7 +123,8 @@ function Contact() {
             <p className={classes.error}>Message must not be empty</p>
           ) : null}
         </div>
-        {formIsSubmitted ? (
+        {isLoading ? "Loading..." : null}
+        {formIsSubmitted & !isLoading ? (
           <p className={classes.success}>
             Your submmision is received. I will be in touch shortly
           </p>

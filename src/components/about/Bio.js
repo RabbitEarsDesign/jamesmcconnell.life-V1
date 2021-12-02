@@ -35,11 +35,11 @@ function Bio() {
       <p>
         I am a problem solver, who has been freelancing while I work towards
         finding a fulltime job in the industry. Rabbit Ears Design is the
-        company I formed for my freelance work and the sudo name I use for
+        company I formed for my freelance work and the pseudo name I use for
         social media.
       </p>
       <p>
-        Currently actively looking for employment as a fulltime web
+        Currently actively looking for employment as a full-time web
         developer/software engineer.{" "}
       </p>
       <Video url="https://www.youtube.com/embed/KDhCjJzWFtg" />

@@ -1,0 +1,16 @@
+.projectLayout {
+  background: var(--primary-color);
+  padding: 3rem 2rem 6rem 2rem;
+}
+
+.projectGroup {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem 0;
+}
+@media (max-width: 850px) {
+  .projectGroup {
+    flex-direction: column;
+  }
+}

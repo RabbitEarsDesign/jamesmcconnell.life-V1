@@ -32,7 +32,7 @@ function Technologies() {
       </div>
       <div className={classes.iconGroup}>
         <FontAwesomeIcon icon={faSass} className={classes.icon} />
-        <p className={classes.iconDescription}>SASS </p>
+        <p className={classes.iconDescription}>Nested CSS</p>
       </div>
     </div>
   );
