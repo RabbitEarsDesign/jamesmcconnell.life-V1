@@ -1,0 +1,73 @@
+.container {
+  padding: 6rem;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.container canvas {
+  border: 2px solid var(--primary-color);
+}
+
+.toolbox {
+  background: var(--primary-color);
+  /* border: 2px solid var(--tertiary-color); */
+  display: flex;
+  width: 90%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.toolbox > * {
+  background-color: #fff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  height: 50px;
+  width: 50px;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.toolbox > *:last-child {
+  margin-left: auto;
+}
+
+@media (max-width: 700px) {
+  /* .container canvas {
+    height: 500px;
+  } */
+
+  .container {
+    padding: 4rem;
+  }
+
+  .toolbox {
+    padding: 0.75rem;
+  }
+
+  .toolbox > * {
+    font-size: 1rem;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .toolbox {
+    padding: 0.5rem;
+  }
+
+  .toolbox > * {
+    font-size: 1rem;
+    height: 25px;
+    width: 25px;
+  }
+}

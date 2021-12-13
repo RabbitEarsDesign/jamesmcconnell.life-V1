@@ -45,7 +45,7 @@ const Landing = () => {
             >
               <FontAwesomeIcon icon={faDownload} className={classes.icon} />
             </a> */}
-            <small>resume</small>
+            {/* <small>resume</small> */}
           </div>
           <Button url="#projects" target="">
             View My Work

@@ -45,7 +45,6 @@ function Clock() {
       "Dec",
     ];
     function setTime() {
-      console.log("clock");
       const time = new Date();
       const month = time.getMonth();
       const day = time.getDay();
