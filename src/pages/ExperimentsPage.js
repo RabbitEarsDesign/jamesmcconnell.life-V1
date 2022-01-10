@@ -1,9 +1,7 @@
 import React from "react";
-import { useParams, Outlet } from "react-router";
+import { useParams } from "react-router";
 // COMPONENTS
-
 import ArtGallery from "../components/art/ArtGallery";
-
 import Clock from "../components/clock/Clock";
 import Heading1 from "../components/ui/headers/Heading1";
 import DrawingBoard from "../components/drawingBoard/DrawingBoard";
