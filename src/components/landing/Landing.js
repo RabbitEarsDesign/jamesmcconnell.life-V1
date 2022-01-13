@@ -3,7 +3,7 @@ import silhouette from "./silhouette3.png";
 
 // FONTAWESOME
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
 import {
   faGithub,
   faLinkedin,
@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 // COMPONENTS
 import Button from "../ui/Button";
+import ButtonInternal from "../ui/ButtonInternal";
 // CSS
 import classes from "./Landing.module.css";
 
@@ -39,17 +40,11 @@ const Landing = () => {
             <a href="https://www.instagram.com/rabbitearsdesign" target="blank">
               <FontAwesomeIcon icon={faInstagram} className={classes.icon} />
             </a>
-            {/* <a
-              href={process.env.PUBLIC_URL + "/resume_james_mcconnell.pdf"}
-              download
-            >
-              <FontAwesomeIcon icon={faDownload} className={classes.icon} />
-            </a> */}
-            {/* <small>resume</small> */}
           </div>
           <Button url="#projects" target="">
-            View My Work
+            View Projects
           </Button>
+          <ButtonInternal url="/art">View Art</ButtonInternal>
         </div>
         <div className={classes.img}>
           <img src={silhouette} alt="Silhouette" />

@@ -5,9 +5,7 @@ import Layout from "./components/layout/Layout";
 import ScrollToTop from "./components/routing/ScrollToTop";
 // Pages
 import HomePage from "./pages/HomePage";
-// import AboutPage from "./pages/AboutPage";
-// import ExperimentsPage from "./pages/ExperimentsPage";
-// import Experiments from "./components/experiments/Experiments";
+
 // CSS
 import "./App.css";
 
