@@ -1,0 +1,35 @@
+.lazyImg {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.lazyImg:hover,
+.lazyImg:focus {
+  filter: brightness(70%);
+}
+
+.lazyImg img {
+  width: 200px;
+  height: 200px;
+}
+
+.placeholder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  animation: loadingAnimation 1s infinite;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #ccc;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
