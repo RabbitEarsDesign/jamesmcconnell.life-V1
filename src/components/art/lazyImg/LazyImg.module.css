@@ -1,6 +1,7 @@
 .lazyImg {
   margin: 1rem;
   cursor: pointer;
+  position: relative;
 }
 
 .lazyImg:hover,
