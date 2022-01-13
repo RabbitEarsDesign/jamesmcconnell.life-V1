@@ -15,9 +15,7 @@ function ExperimentsPage(props) {
       <Heading1>The Lab</Heading1>
       {props.children}
       <Clock />
-      {/* <DrawingBoard /> */}
       <ProjectLayout />
-      <ArtGallery />
     </div>
   );
 }

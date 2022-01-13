@@ -22,8 +22,8 @@ const Landing = () => {
           <h1>Hello World</h1>
           <h1>I'm James</h1>
           <p>
-            Web developer, designer, and digital artist, with experience
-            building functional and user friendly web applications utilizing
+            Web developer, designer, and digital artist, with a passion for
+            building functional and user friendly web applications, utilizing
             technologies such as JavaScript/ReactJS, HTML, & CSS
           </p>
           <div className={classes.social}>

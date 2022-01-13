@@ -1,14 +1,14 @@
 .artGallery {
   text-align: center;
-  height: 100%;
+  /* height: 100%; */
   margin: 3rem;
 }
 
-.artGallery iframe {
-  border: none;
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .icon {

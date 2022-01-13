@@ -17,8 +17,11 @@ const MainNavigation = () => {
           <li>
             <NavLink to="/about">About</NavLink>
           </li>
-          <li className={classes.btn}>
+          <li>
             <NavLink to="/experiments">The Lab</NavLink>
+          </li>
+          <li>
+            <NavLink to="/art">Art</NavLink>
           </li>
         </ul>
       </nav>
