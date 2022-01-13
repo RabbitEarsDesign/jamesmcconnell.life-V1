@@ -3,6 +3,11 @@
   cursor: pointer;
 }
 
+.photo:hover,
+.photo:focus {
+  filter: brightness(70%);
+}
+
 .photo img {
   width: 200px;
   height: 200px;

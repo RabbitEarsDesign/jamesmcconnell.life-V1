@@ -3,6 +3,16 @@
   /* height: 100%; */
   margin: 3rem;
 }
+.artGallery h1 {
+  text-transform: uppercase;
+}
+
+.artGallery p {
+  padding: 2rem 0;
+  font-style: italic;
+  width: 80%;
+  margin: 0 auto;
+}
 
 .flex {
   display: flex;
@@ -18,4 +28,10 @@
 
 .icon:hover {
   color: var(--tertiary-color);
+}
+
+@media (min-width: 950px) {
+  .artGallery p {
+    width: 50%;
+  }
 }
