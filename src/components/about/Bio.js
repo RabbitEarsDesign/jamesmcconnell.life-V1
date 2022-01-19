@@ -1,14 +1,14 @@
 import React from "react";
 // FONTAWESOME
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
 import {
   faGithub,
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 // COMPONENTS
-import Video from "../ui/Video";
+// import Video from "../ui/Video";
 // CSS
 import classes from "./Bio.module.css";
 // import Button from "../ui/Button";
@@ -33,11 +33,11 @@ function Bio() {
           <FontAwesomeIcon icon={faInstagram} className={classes.icon} />
         </a>
       </div>
-      <small>Front-end Developer, Designer, Digital Atist</small>
+      <small>Web Developer, Designer, Digital Atist</small>
       <p>
-        I'm James McConnell, 23 year old Front-end developer. I create art
-        through programming and take pride in crafting clean efficient user
-        interfaces.
+        I'm James McConnell, 23 year old web developer. I take pride in crafting
+        clean and efficient user interfaces. My passion is in blurring the lines
+        between art and code.
       </p>
       <p>
         I am a problem solver, who has been freelancing while I work towards
@@ -49,8 +49,8 @@ function Bio() {
         Currently actively looking for employment as a full-time web
         developer/software engineer.{" "}
       </p>
-      <Video url="https://www.youtube.com/embed/KDhCjJzWFtg" />
-      <small>Checkout this video to learn more about me.</small>
+      {/* <Video url="https://www.youtube.com/embed/KDhCjJzWFtg" />
+      <small>Checkout this video to learn more about me.</small> */}
 
       {/* <Button>Hire Me!</Button> */}
     </div>

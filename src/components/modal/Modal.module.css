@@ -11,19 +11,40 @@
 
 .modal {
   position: fixed;
-  top: 5%;
-  left: 0%;
+  left: 0;
+  top: 3%;
+  right: 0;
+  margin: auto;
+  max-width: 600px;
+  width: 50%;
   padding: 1rem;
+  text-align: center;
+  background: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
 }
 
-@media (min-width: 768px) {
+.modal img {
+  width: 100%;
+}
+
+.modal a {
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+  color: var(--tertiary-color);
+}
+
+.modal a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
   .modal {
-    width: 40rem;
-    left: calc(50% - 20rem);
+    width: 80%;
   }
 }
 

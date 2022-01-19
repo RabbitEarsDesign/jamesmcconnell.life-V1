@@ -14,6 +14,17 @@
   margin: 0 auto;
 }
 
+.artGallery a {
+  color: var(--tertiary-color);
+  margin-left: 5px;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.artGallery a:hover {
+  text-decoration: none;
+}
+
 .flex {
   display: flex;
   justify-content: center;

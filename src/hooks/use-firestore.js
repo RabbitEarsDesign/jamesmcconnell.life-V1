@@ -7,7 +7,10 @@ const useFirestore = (collection) => {
   useEffect(() => {
     const unsub = projectFirestore
       .collection(collection)
-      .orderBy("createdAt", "desc")
+      .orderBy("fileNum", "desc")
+      // In the future it may be needed to limit the number of docs returned on each call
+      // limit to 100
+      // .limit(100)
       .onSnapshot((snap) => {
         let documents = [];
         snap.forEach((doc) => {

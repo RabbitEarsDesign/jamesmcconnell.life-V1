@@ -16,7 +16,7 @@ function LazyImg(props) {
 
   const showModalHandler = () => {
     props.setModalIsShown(true);
-    setSelectedImg(props.src);
+    setSelectedImg({ src: props.src, fileNum: props.fileNum });
   };
 
   return (
@@ -28,6 +28,7 @@ function LazyImg(props) {
           alt="daily digital art"
           onLoad={removePlaceholder}
           onError={removePlaceholder}
+          offset={-100}
         />
       </LazyLoad>
     </div>

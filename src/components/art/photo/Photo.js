@@ -1,3 +1,5 @@
+// Currently not using this component but it can be useful when lazy load is not needed
+
 import React from "react";
 // CSS
 import classes from "./Photo.module.css";
