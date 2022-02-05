@@ -22,6 +22,7 @@ const useStorage = (file) => {
     const fileNum = parseInt(name.split("").splice(0, 4).join(""));
 
     if (name.length === 8) {
+      console.log("useStorageJs: file name is", name);
       // PUT file on storage
       storageRef.put(file).on(
         "state_changed",
@@ -43,6 +44,8 @@ const useStorage = (file) => {
           setUrl(url);
         }
       );
+    } else {
+      console.error("useStorageJs: file name is", name);
     }
   }, [file, name]);
 

@@ -1,5 +1,5 @@
 .lazyImg {
-  margin: 1rem;
+  margin: 0.8rem;
   cursor: pointer;
   position: relative;
 }
@@ -33,5 +33,22 @@
   }
   100% {
     background-color: #fff;
+  }
+}
+
+@media (max-width: 750px) {
+  .lazyImg img {
+    width: 125px;
+    height: 125px;
+  }
+
+  .lazyImg {
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .lazyImg {
+    margin: 0.25rem;
   }
 }

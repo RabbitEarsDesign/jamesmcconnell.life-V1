@@ -25,7 +25,7 @@ const Landing = () => {
           <p>
             Web developer, designer, and digital artist, with a passion for
             building functional and user friendly web applications, utilizing
-            technologies such as JavaScript/ReactJS, HTML, & CSS
+            technologies such as JavaScript/React/Node, MongoDB, AWS, & CSS
           </p>
           <div className={classes.social}>
             <a href="https://github.com/rabbitearsdesign" target="blank">

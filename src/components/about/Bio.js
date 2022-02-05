@@ -35,19 +35,18 @@ function Bio() {
       </div>
       <small>Web Developer, Designer, Digital Atist</small>
       <p>
-        I'm James McConnell, 23 year old web developer. I take pride in crafting
-        clean and efficient user interfaces. My passion is in blurring the lines
-        between art and code.
+        I'm James McConnell, web developer who belives in keeping up with
+        current trends and vendor best practices. I take pride in crafting clean
+        and efficient user interfaces. My passion is in blurring the lines
+        between art and code. Currently diving deep into Node.js.
       </p>
       <p>
-        I am a problem solver, who has been freelancing while I work towards
-        finding a fulltime job in the industry. Rabbit Ears Design is the
-        company I formed for my freelance work and the pseudo name I use for
-        social media.
+        I am a problem solver, who enjoys working as part of a team. Rabbit Ears
+        Design is the company I formed for my freelance work and the pseudo name
+        I use for social media.
       </p>
       <p>
-        Currently actively looking for employment as a full-time web
-        developer/software engineer.{" "}
+        Currently employed with Blueacorn iCi as an AEM Front End Developer.{" "}
       </p>
       {/* <Video url="https://www.youtube.com/embed/KDhCjJzWFtg" />
       <small>Checkout this video to learn more about me.</small> */}
